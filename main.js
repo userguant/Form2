@@ -1,4 +1,3 @@
-// ── CURSOR ──
 const cursor = document.getElementById('cursor');
 document.addEventListener('mousemove', e => {
   cursor.style.left = e.clientX + 'px';
@@ -11,7 +10,6 @@ document.querySelectorAll('a, button, .speaker-card').forEach(el => {
   el.addEventListener('mouseleave', () => cursor.classList.remove('big'));
 });
 
-// ── LETTER PUSH (title) ──
 function splitLetters(el) {
   const text = el.textContent;
   el.innerHTML = '';
@@ -45,7 +43,6 @@ document.addEventListener('mousemove', e => {
   });
 });
 
-// ── SPEAKER DATA ──
 const speakers = {
   v: {
     desc: 'Making and creating from the heart, not the head. A solo exhibition at Art Windsor Essex (Nov. 20 – May 24, 2026) exploring profoundly personal and collaborative art-making.',
@@ -61,7 +58,6 @@ const speakers = {
   }
 };
 
-// ── TYPING STATE ──
 const typedDisplay = document.getElementById('typed-display');
 const echoLayer = document.getElementById('echo-layer');
 const infoOverlay = document.getElementById('info-overlay');
@@ -72,7 +68,6 @@ const speakerMap = {
   a: { card: document.getElementById('card-a'), desc: document.getElementById('desc-a'), hint: document.getElementById('hint-a') },
 };
 
-// 0=hidden, 1=desc showing, 2=bio showing
 const cardState = { v: 0, k: 0, a: 0 };
 
 let typedBuffer = '';
