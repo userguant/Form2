@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCAD Research Talks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div id="cursor"></div>
+
+<!-- Background echo layer -->
+<div id="echo-layer"></div>
+
+<!-- Main stage -->
+<div id="stage">
+
+  <!-- Top bar -->
+  <div id="topbar">
+    <div class="bar-left">
+      <strong>OCAD University</strong>
+      Faculty of Arts &amp; Science
+    </div>
+    <div class="bar-right">
+      Main Building, Room 543<br>
+      100 McCaul Street, Toronto<br>
+      <strong>March 24, 2026 — 3:30–4:30 pm</strong>
+    </div>
+  </div>
+
+  <!-- Center -->
+  <div id="center">
+    <div id="title-wrap">
+      <span class="title-line" id="line1">RESEARCH</span>
+      <span class="title-line" id="line2">TALKS</span>
+    </div>
+    <div id="prompt-wrap">
+      <span id="prompt-label">type to explore →</span>
+      <span id="typed-display"></span>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div id="bottombar">
+    <div id="hint-area">
+      type <span class="hint-key">v</span> <span class="hint-key">k</span> <span class="hint-key">a</span> to meet the speakers
+      &nbsp;·&nbsp;
+      <span class="hint-key">enter</span> for full programme
+      &nbsp;·&nbsp;
+      <span class="hint-key">esc</span> to reset
+    </div>
+    <div id="status">
+      Free admission &nbsp;·&nbsp; March 24, 2026
+    </div>
+  </div>
+
+</div>
+
+<!-- Speaker cards (right side) -->
+<div id="cards-wrap">
+  <div class="speaker-card" id="card-v">
+    <div class="card-name">Vanessa<br>Dion Fletcher</div>
+    <div class="card-topic">BIG Doll || Xwat Naaniitus</div>
+    <div class="card-desc" id="desc-v">Making and creating from the heart, not the head. A solo exhibition at Art Windsor Essex (Nov. 20 – May 24, 2026) exploring profoundly personal and collaborative art-making.</div>
+    <div class="card-trigger" id="hint-v">type <span>V</span> again to read bio</div>
+  </div>
+  <div class="speaker-card" id="card-k">
+    <div class="card-name">Kelsey<br>Pugh</div>
+    <div class="card-topic">Reconstructing Ancient Faces</div>
+    <div class="card-desc" id="desc-k">Virtual reconstruction of the 12-million-year-old ape Pierolapithecus — paleoanthropology, fossils, and new research on old faces.</div>
+    <div class="card-trigger" id="hint-k">type <span>K</span> again to read bio</div>
+  </div>
+  <div class="speaker-card" id="card-a">
+    <div class="card-name">Anna<br>Stielau</div>
+    <div class="card-topic">Arts of Darkness: Rethinking Photography from South Africa</div>
+    <div class="card-desc" id="desc-a">Photography needs light, power, water. In South Africa these can't be taken for granted. Artists working within — and through — these constraints.</div>
+    <div class="card-trigger" id="hint-a">type <span>A</span> again to read bio</div>
+  </div>
+</div>
+
+<!-- Full info overlay -->
+<div id="info-overlay">
+  <div class="overlay-header">
+    <div class="overlay-title">
+      Research<br>
+      <em>Talks</em>
+    </div>
+    <div class="close-hint">press <span>ESC</span> to close</div>
+  </div>
+  <div class="overlay-body">
+    <div class="overlay-speaker">
+      <div class="overlay-speaker-name">Vanessa Dion Fletcher</div>
+      <div class="overlay-speaker-topic">BIG Doll || Xwat Naaniitus</div>
+      <div class="overlay-speaker-bio">A Lenape and Potawatomi neurodiverse Artist working in performance, textiles, and video. Employs porcupine quills, Wampum belts, and menstrual blood to reveal the complexities of what defines a body physically and culturally. MFA, School of the Art Institute of Chicago, 2016.</div>
+    </div>
+    <div class="overlay-speaker">
+      <div class="overlay-speaker-name">Kelsey Pugh</div>
+      <div class="overlay-speaker-topic">Reconstructing Ancient Faces</div>
+      <div class="overlay-speaker-bio">Paleoanthropologist studying ape and human evolution from the fossil record. Uses comparative anatomy, phylogenetics, and 3D geometric morphometrics. PhD in Biological Anthropology, City University of New York, 2020.</div>
+    </div>
+    <div class="overlay-speaker">
+      <div class="overlay-speaker-name">Anna Stielau</div>
+      <div class="overlay-speaker-topic">Arts of Darkness</div>
+      <div class="overlay-speaker-bio">Assistant professor of art history and visual culture at OCAD University. PhD, NYU Department of Media, Culture, and Communication. Weisman Postdoctoral Teaching Fellow in Visual Culture, Caltech. Research explores how contemporary African artists use media and technology.</div>
+    </div>
+  </div>
+  <div class="overlay-footer">
+    <div>OCAD University &nbsp;·&nbsp; Faculty of Arts &amp; Science &nbsp;·&nbsp; Free admission</div>
+    <div><strong>March 24, 2026</strong> &nbsp;·&nbsp; 3:30–4:30 pm &nbsp;·&nbsp; Room 543, 100 McCaul St</div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
