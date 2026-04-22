@@ -116,7 +116,6 @@ function handleSpeakerKey(key) {
     });
     cardState[key] = 2;
   } else {
-    // Close
     card.classList.remove('visible', 'active');
     cardState[key] = 0;
   }
