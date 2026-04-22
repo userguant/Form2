@@ -100,20 +100,17 @@ function handleSpeakerKey(key) {
   const state = cardState[key];
 
   if (state === 0) {
-    // Hide all other cards first
     Object.keys(speakerMap).forEach(k => {
       if (k !== key) {
         speakerMap[k].card.classList.remove('visible', 'active');
         cardState[k] = 0;
       }
     });
-    // Show this card with desc
     desc.textContent = speakers[key].desc;
     card.classList.add('visible', 'active');
     hint.innerHTML = `type <span>${key.toUpperCase()}</span> again to read bio`;
     cardState[key] = 1;
   } else if (state === 1) {
-    // Fade to bio
     fadeSwap(desc, speakers[key].bio, () => {
       hint.innerHTML = `type <span>${key.toUpperCase()}</span> again to close`;
     });
