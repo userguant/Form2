@@ -19,7 +19,6 @@ html, body {
   cursor: none;
 }
 
-/* ── CUSTOM CURSOR ── */
 #cursor {
   position: fixed;
   width: 10px; height: 10px;
@@ -33,7 +32,6 @@ html, body {
 }
 #cursor.big { transform: translate(-50%, -50%) scale(5); background: rgba(255,77,109,0.2); }
 
-/* ── STAGE ── */
 #stage {
   position: fixed;
   inset: 0;
@@ -43,7 +41,6 @@ html, body {
   gap: 0;
 }
 
-/* ── TOP BAR ── */
 #topbar {
   display: flex;
   justify-content: space-between;
@@ -83,7 +80,6 @@ html, body {
   font-weight: 400;
 }
 
-/* ── CENTER AREA ── */
 #center {
   display: flex;
   flex-direction: column;
@@ -93,7 +89,6 @@ html, body {
   overflow: hidden;
 }
 
-/* ── TITLE ── */
 #title-wrap {
   line-height: 0.9;
   user-select: none;
@@ -117,7 +112,6 @@ html, body {
   color: var(--red);
 }
 
-/* ── PROMPT ── */
 #prompt-wrap {
   display: flex;
   align-items: center;
@@ -154,7 +148,6 @@ html, body {
   50% { opacity: 0; }
 }
 
-/* ── SPEAKER CARDS ── */
 #cards-wrap {
   position: fixed;
   right: 3vw;
@@ -231,7 +224,6 @@ html, body {
   font-weight: 400;
 }
 
-/* ── BOTTOM BAR ── */
 #bottombar {
   display: flex;
   justify-content: space-between;
@@ -272,7 +264,6 @@ html, body {
   line-height: 1.8;
 }
 
-/* ── BACKGROUND ECHO LETTERS ── */
 #echo-layer {
   position: fixed;
   inset: 0;
@@ -295,7 +286,6 @@ html, body {
   100% { opacity: 0; transform: scale(1.15); }
 }
 
-/* ── REVEAL LAYER ── */
 #info-overlay {
   position: fixed;
   inset: 0;
@@ -396,7 +386,6 @@ html, body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* responsive hide cards on small screens */
 @media (max-width: 700px) {
   #cards-wrap { display: none; }
   .title-line { font-size: clamp(4rem, 18vw, 8rem); }
